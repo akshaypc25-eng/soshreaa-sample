@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soshreaa | Wedding Planners in Mumbai</title>
+<meta name="description" content="Soshreaa plans weddings in Mumbai, from design to the last guest transfer. Based in Andheri East.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f2f8; --fg:#1b2140; --muted:#5d6180; --card:#ffffff; --line:#dcd7e6; --accent:#c2456b; --accent-fg:#ffffff; --navy:#1b2140; --navy-fg:#f3f1f8; --soft:#ebe4f1;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#12152b;--fg:#eceaf5;--muted:#a7aac6;--card:#1c2040;--line:#2e335c;--accent:#ea7fa0;--accent-fg:#2b0d18;--navy:#0b0d1d;--soft:#1c2040}
+}
+:root[data-theme="dark"]{--bg:#12152b;--fg:#eceaf5;--muted:#a7aac6;--card:#1c2040;--line:#2e335c;--accent:#ea7fa0;--accent-fg:#2b0d18;--navy:#0b0d1d;--soft:#1c2040}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Figtree,system-ui,sans-serif;font-size:17px;line-height:1.6}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--navy);color:var(--navy-fg)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+.logo{font-family:"DM Serif Display",serif;font-size:26px;text-decoration:none}
+.logo i{color:var(--accent)}
+nav a{margin-left:20px;text-decoration:none;font-size:15px;opacity:.85}
+nav a:hover{color:var(--accent);opacity:1}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding-top:56px;padding-bottom:62px}
+.hero h1{font-size:clamp(40px,7vw,70px)}
+.hero p{max-width:29em;color:var(--muted);margin:18px 0 28px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);font-weight:600;padding:13px 26px;border-radius:999px;text-decoration:none;border:2px solid var(--accent)}
+.btn.alt{background:transparent;color:var(--fg);border-color:var(--fg);margin-left:10px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 24px;box-shadow:0 10px 30px #1b214018}
+.plan h3{font-size:24px;margin-bottom:4px}
+.plan small{color:var(--muted)}
+.plan ul{list-style:none;margin:14px 0 0;padding:0}
+.plan li{display:flex;gap:14px;padding:10px 0;border-top:1px solid var(--line)}
+.plan time{min-width:74px;font-weight:600;color:var(--accent)}
+.strip{background:var(--navy);color:var(--navy-fg)}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:6px 34px;justify-content:center;padding-top:16px;padding-bottom:16px;font-weight:500}
+section{padding:66px 0}
+h2{font-size:clamp(32px,5vw,46px);margin-bottom:10px}
+.lead{color:var(--muted);max-width:36em;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{font-size:25px;margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tile{position:relative;overflow:hidden;aspect-ratio:1;border-radius:18px;display:flex;align-items:flex-end;padding:12px;color:#fff;font-size:15px;font-weight:500}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile span{position:relative;background:#0007;padding:2px 12px;border-radius:999px}
+.t1{background:linear-gradient(150deg,#1b2140,#c2456b)}.t2{background:linear-gradient(150deg,#5a3a7a,#f0b7c8)}.t3{background:linear-gradient(150deg,#2a4a6a,#e8c7a0)}
+.t4{background:linear-gradient(150deg,#7a2f55,#f4d6b8)}.t5{background:linear-gradient(150deg,#31416e,#c9a6e0)}.t6{background:linear-gradient(150deg,#4b2a4f,#e6a1b5)}
+.contact{background:var(--navy);color:var(--navy-fg)}
+.contact .lead{color:#b9bcd6}
+.contact address{font-style:normal;margin:20px 0;color:#d6d8ea}
+.contact .btn.alt{color:var(--navy-fg);border-color:#ffffff66}
+footer{padding:22px 0;text-align:center;font-size:14px;color:var(--muted)}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#08331a;font-weight:600;padding:12px 18px;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px #0004;z-index:6}
+@media(max-width:720px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:34px}
+  nav a:not(:last-child){display:none}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .btn.alt{margin:12px 0 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">Soshreaa<i>.</i></a>
+  <nav><a href="#services">What we do</a><a href="#work">Events</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Every function on time, every family looked after</h1>
+    <p>Soshreaa plans weddings in Mumbai. We design the events, run the day and keep guests, vendors and families moving, so you can enjoy your own wedding.</p>
+    <a class="btn" href="https://wa.me/917021781143?text=Hi%20Soshreaa%2C%20I%27d%20like%20to%20plan%20my%20wedding." target="_blank" rel="noopener">Plan my wedding</a>
+    <a class="btn alt" href="#work">See our events</a>
+  </div>
+  <div class="plan" aria-label="Example day plan">
+    <h3>Example day plan</h3>
+    <small>The kind of schedule we build for every function</small>
+    <ul>
+      <li><time>10:00</time><span>Decor and stage final check</span></li>
+      <li><time>12:00</time><span>Family and guest arrivals</span></li>
+      <li><time>14:00</time><span>Main ceremony begins</span></li>
+      <li><time>19:00</time><span>Reception and entertainment</span></li>
+    </ul>
+  </div>
+</div></div>
+
+<div class="strip"><div class="wrap">
+  <span>Rated 4.9 on Google from 32 reviews</span>
+  <span>Based in Andheri East, Mumbai</span>
+  <span>Open daily, 9 am to 11 pm</span>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2>What we do</h2>
+  <p class="lead">One team for the planning, the design and the day itself.</p>
+  <div class="grid">
+    <div class="card"><h3>Full wedding planning</h3><p>From budgets and vendors to timelines for every function.</p></div>
+    <div class="card"><h3>Design and decor</h3><p>Themes, colors and backdrops that fit your venue and families.</p></div>
+    <div class="card"><h3>Guest and logistics care</h3><p>Arrivals, stays, transfers and last-minute requests, handled.</p></div>
+    <div class="card"><h3>Personal shadows</h3><p>A dedicated helper for the bride, groom and close family on the day.</p></div>
+  </div>
+</div></section>
+
+<section id="work" style="padding-top:0"><div class="wrap">
+  <h2>Events we have planned</h2>
+  <p class="lead">A look at the kinds of celebrations we run. Photos from real weddings go here.</p>
+  <div class="gal">
+    <div class="tile t1"><img src="photo1.jpg" alt="Wedding stage" loading="lazy" onerror="this.remove()"><span>Wedding stage</span></div>
+    <div class="tile t2"><img src="photo2.jpg" alt="Sangeet setup" loading="lazy" onerror="this.remove()"><span>Sangeet</span></div>
+    <div class="tile t3"><img src="photo3.jpg" alt="Mehendi setup" loading="lazy" onerror="this.remove()"><span>Mehendi</span></div>
+    <div class="tile t4"><img src="photo4.jpg" alt="Entrance decor" loading="lazy" onerror="this.remove()"><span>Entrance</span></div>
+    <div class="tile t5"><img src="photo5.jpg" alt="Reception hall" loading="lazy" onerror="this.remove()"><span>Reception</span></div>
+    <div class="tile t6"><img src="photo6.jpg" alt="Haldi setup" loading="lazy" onerror="this.remove()"><span>Haldi</span></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Tell us about your wedding</h2>
+  <p class="lead">Send your date, city and guest count and we will reply with ideas.</p>
+  <address>Shop No. 10, Swapnapurti CHS R-5, Mahakali Caves Rd,<br>Andheri East, Mumbai 400093<br>Phone: <a href="tel:+917021781143">+91 70217 81143</a></address>
+  <a class="btn" href="https://wa.me/917021781143?text=Hi%20Soshreaa%2C%20I%27d%20like%20to%20plan%20my%20wedding." target="_blank" rel="noopener">Chat on WhatsApp</a>
+  <a class="btn alt" href="https://www.instagram.com/soshreaaweddings/" target="_blank" rel="noopener">Instagram</a>
+</div></section>
+</main>
+
+<footer>© Soshreaa Weddings, Mumbai</footer>
+<a class="wa" href="https://wa.me/917021781143" target="_blank" rel="noopener">WhatsApp</a>
+</body>
+</html>
